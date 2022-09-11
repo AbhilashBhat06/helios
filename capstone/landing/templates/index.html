@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Capstone Frontend</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+	<nav class="navbar">
+		{% load static %}
+		<a href="#"><img src="{% static "images/logo.png" %}" alt="logo" class="logo" /></a>
+		<span class="logo-text">Helios</span>
+		<!-- Navbar for Mobile Devices -->
+		<!-- <div class="navbar-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div> -->
+		<!-- Navbar for Desktop devices -->
+		<div class="navbar-menu">
+			<a href="#home" class="navbar-links">Home</a>
+			<a href="#cities" class="navbar-links">Cities</a>
+			<a href="#tech" class="navbar-links">Tech</a>
+			<a href="#contact" class="navbar-links">Contact</a>
+		</div>
+	</nav>
+	<div class="banner-area" id="home" style="background-image: url('{% static "images/banner_light.jpg" %}');">
+		<!-- <img src="{% static "images/banner_light.jpg" %}" class="img" alt=""> -->
+		<div class="text-area">
+			<h1>Transform the way </h1>
+			<h1>you look at cities</h1>
+			<br>
+			<p> We aim to give you a whole new perspective </p>
+			<p> for the city you wish to live in.</p>
+		</div>
+		<div class="btn-area">
+			<button class="get-started">Getting Started</button>
+			<button class="read-more">Read More</button>
+		</div>
+	</div>
+	<div class="content-area1" id="cities">
+		<div class="text-area">
+			<h2>What we do.</h2>
+			<p>
+				Urban Planning from a birds eye perspective is what we aim
+			</p>
+			<p>
+				to bring forward.
+			</p>
+			<p>
+				We asked the city planners what they believed is a well planned city and we're to tell you if your city fits
+				the
+				mark
+			</p>
+			<button class="test">Test your city</button>
+		</div>
+			<div class="image-area" id="image-area" style="background-image: url('{% static "images/panel_1_light.jpg" %}')">
+			</div>
+	</div>
+	
+	<div class="content-area2" id="tech">
+		<div class="image-area" style="background-image: url('{% static "images/panel_2_light.jpg" %}');"></div>
+		<div class="text-area">
+			<h2>How we do it.</h2>
+			<p>
+				We employ deep learning techniques to analyze
+			</p>
+			<p>
+				satellite images of your city.
+			</p>
+			<p>
+				After which our algorithms test various parameters on the
+			</p>
+			<p>
+				images to give direct verdict on your city's health and well-being
+			</p>
+			<button class="read">Read More</button>
+		</div>
+	</div>
+	<div class="content-area3" id="contact">
+		<div class="text-area">
+			<h2>Help us help you.</h2>
+			<p>
+				We are always open to suggestions, datasets
+			</p>
+			<p>
+				and other geospatial information available.
+			</p>
+			<p>
+				This helps us to refine our algorithms and hone in
+			</p>
+			<p>
+				our capabilities.
+			</p>
+			<p>
+				Reach out to us for same here!
+			</p>
+			<button class="contact">Contact Us</button>
+		</div>
+			<div class="image-area" style="background-image: url('{% static "images/panel_3_light.jpg" %}');">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<h3>Footer Info</h3>
+	</footer>
+	<script src="{% static "js/script.js" %}"></script>
+</body>
+</html>
