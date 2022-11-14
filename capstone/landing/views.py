@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import TemplateView
+
 # Create your views here.
 
 """
@@ -17,14 +18,18 @@ class techPage(TemplateView):
 	template_name = 'tech.html'
 """
 
+
 def homePage(req):
-	return render(req, 'index.html')
+    return render(req, "index.html")
+
 
 def aboutPage(req):
-	return render(req, 'about-us.html')
+    return render(req, "about-us.html")
+
 
 def contactPage(req):
-	return render(req, 'contact.html')
+    return render(req, "contact.html")
+
 
 def techPage(req):
-	return render(req, 'tech.html')
+    return render(req, "tech.html")
