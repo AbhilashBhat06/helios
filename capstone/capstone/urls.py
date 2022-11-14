@@ -19,5 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("helios/", include("landing.urls")),
-    path("api/", include("endpoint.urls")),
+    path("", include("endpoint.urls")),
 ]
