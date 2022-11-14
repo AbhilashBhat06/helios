@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-	path('', include('landing.urls'))
+    path("admin/", admin.site.urls),
+    path("helios/", include("landing.urls")),
+    path("api/", include("endpoint.urls")),
 ]
